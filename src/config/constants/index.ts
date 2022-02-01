@@ -1,7 +1,13 @@
-import { ChainId, JSBI, Percent, Token } from 'golswap-sdk'
+import { ChainId, JSBI, Percent, Token } from '@bigswap/sdk'
 import { mainnetTokens, testnetTokens } from './tokens'
 
-export const ROUTER_ADDRESS = '0x10C22079c1D0388056e54Be5bf6751D9320F54D1'
+
+export const ROUTER_ADDRESS = '0x02c15b424d9cb9D34B650E49868bc29723727f68'
+
+export const FACTORY_ADDRESS = '0x6b549d011FA0409B12329b618214837c0735dB85'
+
+export const INIT_CODE_HASH = '0x626373416ca44ae8fa70016a16027243dd0d8db637a0ea3dbd609a95a3c4d554'
+
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -12,8 +18,8 @@ type ChainTokenList = {
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.MAINNET]: [
     mainnetTokens.wbnb,
-    mainnetTokens.gol,
-    mainnetTokens.cake,
+    mainnetTokens.bsfe,
+    mainnetTokens.bgsp,
     mainnetTokens.busd,
     mainnetTokens.usdt,
     mainnetTokens.btcb,
@@ -21,13 +27,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     mainnetTokens.eth,
     mainnetTokens.usdc,
   ],
-  [ChainId.TESTNET]: [
-        testnetTokens.wbnb, 
-        testnetTokens.cake, 
-        testnetTokens.gol, 
-        testnetTokens.busd,
-        testnetTokens.golv2,
-  ],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
 }
 
 /**
@@ -49,19 +49,20 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
-  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.gol, mainnetTokens.btcb],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake,  testnetTokens.golv2,  testnetTokens.gol, testnetTokens.busd],
+  [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.bgsp, mainnetTokens.bsfe, mainnetTokens.btcb],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.MAINNET]: [mainnetTokens.wbnb, mainnetTokens.dai, mainnetTokens.busd, mainnetTokens.usdt],
-  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.golv2,  testnetTokens.gol, testnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.wbnb, testnetTokens.cake, testnetTokens.busd],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
-    [mainnetTokens.gol, mainnetTokens.wbnb],
+    [mainnetTokens.bsfe, mainnetTokens.wbnb], 
+    [mainnetTokens.bgsp, mainnetTokens.wbnb],
     [mainnetTokens.busd, mainnetTokens.usdt],
     [mainnetTokens.dai, mainnetTokens.usdt],
   ],
