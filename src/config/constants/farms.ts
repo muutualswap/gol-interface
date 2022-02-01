@@ -37,7 +37,7 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wbnb,
   },
- {   
+  {   
     pid: 655,
     lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {
@@ -167,28 +167,7 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.usdt,
     quoteToken: serializedTokens.busd,
   },
-  /*{
-    pid: 506,
-    lpSymbol: 'ERTHA-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x70531B39E2Bb4d8dA59E2Ce41a98eBA2990F8497',
-    },
-    token: serializedTokens.ertha,
-    quoteToken: serializedTokens.wbnb,
-  },
-  {
-    pid: 505,
-    lpSymbol: 'FUSE-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x6483F166b9E4310A165a55FEa04F867499aded06',
-    },
-    token: serializedTokens.fuse,
-    quoteToken: serializedTokens.wbnb,
-  },*/ 
  
-
 ]
 
 export default farms
