@@ -4,17 +4,17 @@ import { SerializedPoolConfig, PoolCategory } from './types'
 const serializedTokens = serializeTokens()
 
 const pools: SerializedPoolConfig[] = [
-  {
+   {
     sousId: 11,
-    stakingToken: serializedTokens.gol,
-    earningToken: serializedTokens.gol,
+    stakingToken: serializedTokens.bgsp,
+    earningToken: serializedTokens.bgsp,
     contractAddress: {
       97: '',
-      56: '0x2F1281A9f84CF6f551dB39156D32A5D6153F25a5', // masterchef gol
+      56: '0x65FE214382fD9e0d6cF054EeD65C150C88ed6834',  // masterchef bgsp
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,
-    tokenPerBlock: '0.0510246', // (11x0.46386/100)=0.0510246
+    tokenPerBlock: '2',
     sortOrder: 1,
     isFinished: false,
   },
