@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'golswap-sdk'
+import { ChainId, Token } from '@bigswap/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { SerializedToken } from './types'
 
