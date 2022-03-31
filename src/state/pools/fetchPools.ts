@@ -10,7 +10,7 @@ import { getSouschefV2Contract } from 'utils/contractHelpers'
 import tokens from 'config/constants/tokens'
 
 export const fetchPoolsBlockLimits = async () => {
-  const poolsWithEnd = poolsConfig.filter((p) => p.sousId !== 11) // OjO Maradona
+  const poolsWithEnd = poolsConfig.filter((p) => p.sousId !== 0) // OjO Maradona
   // Pools con final - 
   const callsStartBlock = poolsWithEnd.map((poolConfig) => {
     return {
