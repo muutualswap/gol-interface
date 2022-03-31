@@ -7,7 +7,7 @@ import { getAddress } from 'utils/addressHelpers'
 import { simpleRpcProvider } from 'utils/providers'
 import BigNumber from 'bignumber.js'
 
-// Pool 11, GOL / Cake is a different kind of contract (master chef)
+// Pool 0, BGSP / Cake is a different kind of contract (master chef)
 // BNB pools use the native BNB token (wrapping ? unwrapping is done at the contract level)
 const nonBnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol !== 'BNB')
 const bnbPools = poolsConfig.filter((pool) => pool.stakingToken.symbol === 'BNB')
@@ -67,9 +67,9 @@ export const fetchUserStakeBalances = async (account) => {
   )
 
   // Gol / Gol pool
-  const { amount: masterPoolAmount } = await masterChefContract.userInfo('11', account) // Ojo Maradona
+  const { amount: masterPoolAmount } = await masterChefContract.userInfo('0', account) // Ojo Maradona
 
-  return { ...stakedBalances, 11: new BigNumber(masterPoolAmount.toString()).toJSON() }
+  return { ...stakedBalances, 0: new BigNumber(masterPoolAmount.toString()).toJSON() }
 }
 
 export const fetchUserPendingRewards = async (account) => {
@@ -87,8 +87,8 @@ export const fetchUserPendingRewards = async (account) => {
     {},
   )
 
-  // Gol / Gol pool
-  const pendingReward = await masterChefContract.pendingGol('11', account) // Ojo Maradona
+  // BGSP / BGSP pool
+  const pendingReward = await masterChefContract.pendingBGSP('0', account) // Ojo Maradona
 
-  return { ...pendingRewards, 11: new BigNumber(pendingReward.toString()).toJSON() }
+  return { ...pendingRewards, 0: new BigNumber(pendingReward.toString()).toJSON() }
 }
