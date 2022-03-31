@@ -74,8 +74,8 @@ export const usePollFarmsWithUserData = (includeArchive = false) => {
 
 /**
  * Fetches the "core" farm data used globally
- * 0 = GOL-BNB LP
- * 3 = BUSD-BNB LP
+ * 0 = BGSP-BNB LP
+ * 252 = BUSD-BNB LP
  */
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
@@ -145,7 +145,7 @@ export const useLpTokenPrice = (symbol: string) => {
 // /!\ Deprecated , use the BUSD hook in /hooks
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(0) // precio en la barra GOL-BNB LP
+  const cakeBnbFarm = useFarmFromPid(0) // precio en la barra BGSP-BNB LP
 
   const cakePriceBusdAsString = cakeBnbFarm.tokenPriceBusd
 
@@ -153,5 +153,5 @@ export const usePriceCakeBusd = (): BigNumber => {
     return new BigNumber(cakePriceBusdAsString)
   }, [cakePriceBusdAsString])
   // console.log("desde state/farms/hooks.ts 1 %o", cakePriceBusdAsString) // Maradona
-  return cakePriceBusd // new BigNumber(25) price of Gol
+  return cakePriceBusd // new BigNumber(25) price of BGSP
 }
