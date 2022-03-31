@@ -9,6 +9,16 @@ const farms: SerializedFarmConfig[] = [
    */
    {
     pid: 11,
+    lpSymbol: 'BGSP', // CAKE = PID 11
+    lpAddresses: {
+      97: '',
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
+    },
+    token: serializedTokens.bgsp,
+    quoteToken: serializedTokens.wbnb,
+  },
+   {
+    pid: 0,
     lpSymbol: 'BGSP', // CAKE = PID 0
     lpAddresses: {
       97: '',
@@ -18,7 +28,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 0,
+    pid: 1,
     lpSymbol: 'BGSP-BNB LP', // CAKE-BNB = (251)
     lpAddresses: {
       97: '',
@@ -28,7 +38,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 3,
+    pid: 252,
     lpSymbol: 'BUSD-BNB LP', // BUSD-BNB = (252)
     lpAddresses: {
       97: '',
@@ -38,7 +48,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
   },
   {   
-    pid: 655,
+    pid: 2,
     lpSymbol: 'BSFE-BNB LP',
     lpAddresses: {
       97: '',
@@ -48,7 +58,7 @@ const farms: SerializedFarmConfig[] = [
     quoteToken: serializedTokens.wbnb,
    },
     { 
-    pid: 644,
+    pid: 3,
     lpSymbol: 'BSFE-BGSP LP',
     lpAddresses: {
       97: '',
