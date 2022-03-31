@@ -42,7 +42,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'BUSD-BNB LP', // BUSD-BNB = (252)
     lpAddresses: {
       97: '',
-      56: '0xc5b252caf7435080d0ba04df2683d710a4d994a0',
+      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wbnb,
