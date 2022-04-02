@@ -17,16 +17,6 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.bgsp,
     quoteToken: serializedTokens.wbnb,
   },
-   {
-    pid: 0,
-    lpSymbol: 'BGSP', // CAKE = PID 0
-    lpAddresses: {
-      97: '',
-      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
-    },
-    token: serializedTokens.bgsp,
-    quoteToken: serializedTokens.wbnb,
-  },
   {
     pid: 1,
     lpSymbol: 'BGSP-BNB LP', // CAKE-BNB = (251)
