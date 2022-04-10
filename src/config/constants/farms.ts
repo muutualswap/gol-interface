@@ -9,165 +9,180 @@ const farms: SerializedFarmConfig[] = [
    */
    {
     pid: 11,
-    lpSymbol: 'BGSP', // CAKE = PID 11
+    lpSymbol: 'GOL', // CAKE = PID 0
     lpAddresses: {
       97: '',
-      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
+      56: '0x52f6a03a53840c01470f33a0b016e4c3e3dfe796',
     },
-    token: serializedTokens.bgsp,
+    token: serializedTokens.gol,
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 1,
-    lpSymbol: 'BGSP-BNB LP', // CAKE-BNB = (251)
+    pid: 0,
+    lpSymbol: 'GOL-BNB LP', // CAKE-BNB = (251)
     lpAddresses: {
       97: '',
-      56: '0x66bffcac0782200d6276142768f79600a458bb04',
+      56: '0x813f158efa2f375e1d82c92208c8727b03f05d62',
     },
-    token: serializedTokens.bgsp,
+    token: serializedTokens.gol,
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 252,
+    pid: 3,
     lpSymbol: 'BUSD-BNB LP', // BUSD-BNB = (252)
     lpAddresses: {
       97: '',
-      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
+      56: '0xc5b252caf7435080d0ba04df2683d710a4d994a0',
     },
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wbnb,
   },
-  {   
+  {
     pid: 2,
-    lpSymbol: 'BSFE-BNB LP',
+    lpSymbol: 'GOL-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x2fc1fc3dbf746f2c42718753f4ac9866d94466b5',
+      56: '0xef1d3deceb43d85d84842032d404ade23eb31b1d', 
     },
-    token: serializedTokens.bsfe,
-    quoteToken: serializedTokens.wbnb,
-   },
-    { 
-    pid: 3,
-    lpSymbol: 'BSFE-BGSP LP',
-    lpAddresses: {
-      97: '',
-      56: '0x398bdf7ffef30c557dcdfcae9b2de13f31b63434',
-    },
-    token: serializedTokens.bsfe,
-    quoteToken: serializedTokens.bgsp,
-   },   
-   {
-    pid: 623,
-    lpSymbol: 'USDC-USDT LP',
-    lpAddresses: {
-      97: '',
-      56: '0xec6557348085aa57c72514d67070dc863c0a5a8c',
-    },
-    token: serializedTokens.usdc,
-    quoteToken: serializedTokens.usdt,
-   },
-   {
-    pid: 599,
-    lpSymbol: 'ETH-USDC LP',
-    lpAddresses: {
-      97: '',
-      56: '0xEa26B78255Df2bBC31C1eBf60010D78670185bD0',
-    },
-    token: serializedTokens.eth,
-    quoteToken: serializedTokens.usdc,
+    token: serializedTokens.gol,
+    quoteToken: serializedTokens.busd,
   },
   {
-    pid: 588,
+    pid: 1,
+    lpSymbol: 'GOL-USDT LP',
+    lpAddresses: {
+      97: '',
+      56: '0xed32931ed14c971de14c596c79e38683a03efdbc', 
+    },
+    token: serializedTokens.gol,
+    quoteToken: serializedTokens.usdt,
+  },
+  {
+    pid: 4,
+    lpSymbol: 'USDT-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xea3664f0c34645908b2669e3e84defc55d086d2b',
+    },
+    token: serializedTokens.usdt,
+    quoteToken: serializedTokens.wbnb,
+  },
+  {
+    pid: 5,
+    lpSymbol: 'USDT-BUSD LP',
+    lpAddresses: {
+      97: '',
+      56: '0x8afd4b199e25a8f19a814a8379aca3137ce691de',
+    },
+    token: serializedTokens.usdt,
+    quoteToken: serializedTokens.busd,
+  },
+  {
+    pid: 6,
+    lpSymbol: 'ETH-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0x88121b54d701910e0c8b79898399b037eb82e480',
+    },
+    token: serializedTokens.eth,
+    quoteToken: serializedTokens.wbnb,
+  },
+  {
+    pid: 7,
     lpSymbol: 'BTCB-ETH LP',
     lpAddresses: {
       97: '',
-      56: '0xD171B26E4484402de70e3Ea256bE5A2630d7e88D',
+      56: '0x8c552845e58d608af7f792f73efea0333b7a6f0e',
     },
     token: serializedTokens.btcb,
     quoteToken: serializedTokens.eth,
   },
   {
-    pid: 586,
-    lpSymbol: 'DOGE-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0xac109c8025f272414fd9e2faa805a583708a017f',
-    },
-    token: serializedTokens.doge,
-    quoteToken: serializedTokens.wbnb,
-  },
-  {
-    pid: 585,
+    pid: 8,
     lpSymbol: 'BTCB-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0xf45cd219aef8618a92baa7ad848364a158a24f33',
+      56: '0x6ff29b32caeab5800e30134a001b08c212433c63',
     },
     token: serializedTokens.btcb,
     quoteToken: serializedTokens.busd,
   },
   {
-    pid: 583,
-    lpSymbol: 'USDC-BUSD LP',
+    pid: 9,
+    lpSymbol: 'CAKE-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1',
+      56: '0xe6d911fe0059d0be11cda2dbf46e92ccc3309f0e',
     },
-    token: serializedTokens.usdc,
-    quoteToken: serializedTokens.busd,
-  },
-  {
-    pid: 572,
-    lpSymbol: 'DAI-BUSD LP',
-    lpAddresses: {
-      97: '',
-      56: '0x66FDB2eCCfB58cF098eaa419e5EfDe841368e489',
-    },
-    token: serializedTokens.dai,
-    quoteToken: serializedTokens.busd,
-  },
-  {
-    pid: 564,
-    lpSymbol: 'USDT-BNB LP',
-    lpAddresses: {
-      97: '',
-      56: '0x16b9a82891338f9bA80E2D6970FddA79D1eb0daE',
-    },
-    token: serializedTokens.usdt,
+    token: serializedTokens.cake,
     quoteToken: serializedTokens.wbnb,
   },
   {
-    pid: 562,
-    lpSymbol: 'BTCB-BNB LP',
+    pid: 10,
+    lpSymbol: 'bCFX-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0x61EB789d75A95CAa3fF50ed7E47b96c132fEc082',
+      56: '0x4a444ea8a23fe97fa8c74b8053e7ae92cb698693',
     },
-    token: serializedTokens.btcb,
+    token: serializedTokens.bcfx,
     quoteToken: serializedTokens.wbnb,
   },
-  {
-    pid: 561,
-    lpSymbol: 'ETH-BNB LP',
+  { 
+    pid: 12,
+    lpSymbol: 'GOL-MILK LP',
     lpAddresses: {
       97: '',
-      56: '0x74E4716E431f45807DCF19f284c7aA99F18a4fbc',
+      56: '0xc24f9a0c79b9418410eb9b67a7a4706c5d42e4ec',
     },
-    token: serializedTokens.eth,
-    quoteToken: serializedTokens.wbnb,
-  },
-  {
-    pid: 558,
-    lpSymbol: 'USDT-BUSD LP',
+    token: serializedTokens.gol,
+    quoteToken: serializedTokens.milk,
+    isCommunity: true,
+},
+{
+    pid: 13,
+    lpSymbol: 'MILK-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
+      56: '0x246cbb99d05e48102370770cef165c7bb2cb6d7e',
     },
-    token: serializedTokens.usdt,
+    token: serializedTokens.milk,
     quoteToken: serializedTokens.busd,
+    isCommunity: true,
   },
- 
+  {
+    pid: 14,
+    lpSymbol: 'GOL-bFLUX LP',
+    lpAddresses: {
+      97: '',
+      56: '0x41Bbb75618E94E22b66Fa45fDeE196dE058b3fE5',
+    },
+    token: serializedTokens.gol,
+    quoteToken: serializedTokens.bflux,
+    isCommunity: true,
+  },
+  {
+    pid: 15,
+    lpSymbol: 'bFLUX-USDT LP',
+    lpAddresses: {
+      97: '',
+      56: '0xf0044d21a0d29692fbdb67e14ff4dcc5bbed86f2',
+    },
+    token: serializedTokens.bflux,
+    quoteToken: serializedTokens.usdt,
+    isCommunity: true,
+  },
+  {
+    pid: 16,
+    lpSymbol: 'MILK-BNB LP',
+    lpAddresses: {
+      97: '',
+      56: '0xc3f91f5958d874cd1ce46a98c54088cbdd8d9188',
+    },
+    token: serializedTokens.milk,
+    quoteToken: serializedTokens.wbnb,
+    isCommunity: true,
+  },
+
 ]
 
 export default farms
