@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token } from 'golswap-sdk'
+import { Token } from '@bigswap/sdk'
 
 export type TranslatableText =
   | string
