@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, JSBI, Price } from 'golswap-sdk'
+import { ChainId, Currency, currencyEquals, JSBI, Price } from '@bigswap/sdk'
 import { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import tokens, { mainnetTokens } from 'config/constants/tokens'
