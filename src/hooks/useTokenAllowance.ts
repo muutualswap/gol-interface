@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from 'golswap-sdk'
+import { Token, TokenAmount } from '@bigswap/sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from './useContract'
