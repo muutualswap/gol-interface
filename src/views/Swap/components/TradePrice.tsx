@@ -1,5 +1,5 @@
 import React from 'react'
-import { Price } from 'golswap-sdk'
+import { Price } from '@bigswap/sdk'
 import { Text, AutoRenewIcon } from 'gol-uikit'
 import { StyledBalanceMaxMini } from './styleds'
 
