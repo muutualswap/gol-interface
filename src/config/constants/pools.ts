@@ -5,7 +5,7 @@ const serializedTokens = serializeTokens()
 
 const pools: SerializedPoolConfig[] = [
    {
-    sousId: 0,
+    sousId: 11,
     stakingToken: serializedTokens.bgsp,
     earningToken: serializedTokens.bgsp,
     contractAddress: {
