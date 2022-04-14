@@ -6,7 +6,7 @@ import {
   ImageProps,
 } from 'gol-uikit'
 import tokens from 'config/constants/tokens'
-import { Token } from 'golswap-sdk'
+import { Token } from '@bigswap/sdk'
 
 interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc' | 'secondarySrc'> {
   primaryToken: Token
