@@ -1,5 +1,5 @@
 import React from 'react'
-import { Trade, TradeType } from 'golswap-sdk'
+import { Trade, TradeType } from '@bigswap/sdk'
 import { Text } from 'gol-uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'
