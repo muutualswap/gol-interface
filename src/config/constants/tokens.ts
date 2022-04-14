@@ -53,7 +53,7 @@ export const mainnetTokens = {
   
   gol: new Token(
     MAINNET,
-    '0x52f6A03a53840C01470f33A0b016E4C3E3DFe796',
+    '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     18,
     'GOL',
     'GOLToken',
