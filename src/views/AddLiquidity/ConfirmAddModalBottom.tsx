@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from 'golswap-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@bigswap/sdk'
 import React from 'react'
 import { Button, Text } from 'gol-uikit'
 import { useTranslation } from 'contexts/Localization'
