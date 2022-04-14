@@ -46,7 +46,7 @@ const emissionsPerBlock = 0.463
 const CakeDataRow = () => {
   const { t } = useTranslation()
   const totalSupply = useTotalSupply()
-  const burnedBalance = getBalanceNumber(useBurnedBalance(tokens.gol.address))
+  const burnedBalance = getBalanceNumber(useBurnedBalance(tokens.bgsp.address))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
   const cakePriceBusd = usePriceCakeBusd()
   const mcap = cakePriceBusd.times(cakeSupply)
