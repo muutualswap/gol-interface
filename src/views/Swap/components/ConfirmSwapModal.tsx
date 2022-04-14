@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo } from 'react'
-import { currencyEquals, Trade } from 'golswap-sdk'
+import { currencyEquals, Trade } from '@bigswap/sdk'
 import { InjectedModalProps } from 'gol-uikit'
 import { useTranslation } from 'contexts/Localization'
 import TransactionConfirmationModal, {
