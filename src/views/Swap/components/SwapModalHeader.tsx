@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react'
-import { Trade, TradeType } from 'golswap-sdk'
+import { Trade, TradeType } from '@bigswap/sdk'
 import { Button, Text, ErrorIcon, ArrowDownIcon } from 'gol-uikit'
 import { Field } from 'state/swap/actions'
 import { useTranslation } from 'contexts/Localization'
