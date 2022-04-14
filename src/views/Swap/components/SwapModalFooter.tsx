@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { Trade, TradeType } from 'golswap-sdk'
+import { Trade, TradeType } from '@bigswap/sdk'
 import { Button, Text, AutoRenewIcon } from 'gol-uikit'
 import { useTranslation } from 'contexts/Localization'
 import { Field } from 'state/swap/actions'
