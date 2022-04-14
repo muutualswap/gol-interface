@@ -1,4 +1,4 @@
-import { Token } from 'golswap-sdk'
+import { Token } from '@bigswap/sdk'
 import { SerializedToken } from 'config/constants/types'
 import { parseUnits } from 'ethers/lib/utils'
 
