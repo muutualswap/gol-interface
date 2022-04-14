@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Token } from 'golswap-sdk'
+import { Currency, Token } from '@bigswap/sdk'
 import { Button, Text, Modal, useModal, InjectedModalProps, Link } from 'gol-uikit'
 import styled from 'styled-components'
 import { AutoRow } from 'components/Layout/Row'
