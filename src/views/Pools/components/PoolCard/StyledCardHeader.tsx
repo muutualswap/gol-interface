@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardHeader, Heading, Text, Flex } from 'gol-uikit'
-import { Token } from 'golswap-sdk'
+import { Token } from '@bigswap/sdk'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import { TokenPairImage } from 'components/TokenImage'
