@@ -1,5 +1,5 @@
 import React, { Fragment, memo } from 'react'
-import { Trade } from 'golswap-sdk'
+import { Trade } from '@bigswap/sdk'
 import { Text, Flex, ChevronRightIcon } from 'gol-uikit'
 import { unwrappedToken } from 'utils/wrappedCurrency'
 
