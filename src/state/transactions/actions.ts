@@ -1,5 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from 'golswap-sdk'
+import { ChainId } from '@bigswap/sdk'
 
 export interface SerializableTransactionReceipt {
   to: string
