@@ -9,22 +9,22 @@ const farms: SerializedFarmConfig[] = [
    */
    {
     pid: 11,
-    lpSymbol: 'GOL', // CAKE = PID 0
+    lpSymbol: 'BGSP', // CAKE = PID 0
     lpAddresses: {
       97: '',
-      56: '0x52f6a03a53840c01470f33a0b016e4c3e3dfe796',
+      56: '0xe9f861b22cd5240494ecc14afea02659ec59864f',
     },
-    token: serializedTokens.gol,
+    token: serializedTokens.bgsp,
     quoteToken: serializedTokens.wbnb,
   },
   {
     pid: 0,
-    lpSymbol: 'GOL-BNB LP', // CAKE-BNB = (251)
+    lpSymbol: 'BGSP-BNB LP', // CAKE-BNB = (251)
     lpAddresses: {
       97: '',
-      56: '0x813f158efa2f375e1d82c92208c8727b03f05d62',
+      56: '0x66bffcac0782200d6276142768f79600a458bb04',
     },
-    token: serializedTokens.gol,
+    token: serializedTokens.bgsp,
     quoteToken: serializedTokens.wbnb,
   },
   {
