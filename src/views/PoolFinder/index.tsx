@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react'
-import { Currency, ETHER, JSBI, TokenAmount } from 'golswap-sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from '@bigswap/sdk'
 import { Button, ChevronDownIcon, Text, AddIcon, useModal } from 'gol-uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
